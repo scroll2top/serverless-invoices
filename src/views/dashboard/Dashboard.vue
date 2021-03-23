@@ -20,12 +20,6 @@
                                    class="pointer">
                                 What about my data?
                             </small>
-                            <small class="pl-2">
-                                Made with
-                                <i class="material-icons material-icons-round md-14 align-text-bottom">favorite</i>
-                                by
-                                <a href="https://mokuapp.io/" class="text-secondary" target="_blank">Moku</a>.
-                            </small>
                             <a href="https://github.com/mokuappio/serverless-invoices"
                                class="btn btn-sm btn--icon ml-2"
                                target="_blank">
@@ -36,9 +30,6 @@
                                      alt="Serverless Invoices Github"
                                      v-else>
                             </a>
-                            <a  href="https://app.mokuapp.io/"
-                                class="btn btn-sm btn-primary ml-2"
-                                target="_blank">Upgrade</a>
                         </div>
                     </footer>
                 </div>

@@ -2,9 +2,9 @@
     <div>
         <div class="row">
             <div class="col-12 mb-4 pr-0 d-flex justify-content-between">
-                <h4 class="mb-0">Invoices</h4>
+                <h4 class="mb-0">Faturalar</h4>
                 <div>
-                    <button class="btn btn-sm btn-outline-dark" @click="createNewInvoice">New invoice</button>
+                    <button class="btn btn-sm btn-outline-dark" @click="createNewInvoice">Yeni Faturalar</button>
                     <b-dropdown variant="link" size="sm" no-caret right>
                         <template slot="button-content">
                             <i class="material-icons">more_vert</i>

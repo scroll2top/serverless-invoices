@@ -1,14 +1,14 @@
 <template>
     <div>
         <h3>
-            Invoice
+            Fatura
             <AppEditable :value="invoice.number"
                          :errors="errors"
                          field="number"
                          placeholder="NO."
                          @change="updateProp({ number: $event })"/>
         </h3>
-        Issued at: <span class="editable__item" v-b-modal.modal_issued_at>{{ invoice.issued_at | date('D. MMM YYYY', 'YYYY-MM-DD') }}</span>
+        Düzenleme Tarihi: <span class="editable__item" v-b-modal.modal_issued_at>{{ invoice.issued_at | date('DD/MM/YYYY', 'YYYY-MM-DD') }}</span>
         <BModal id="modal_issued_at"
                 centered
                 title="Issued at"
@@ -21,6 +21,7 @@
                            :inline="true"
                            field="issued_at"/>
         </BModal>
+        <!--
         <br>Due at: <span class="editable__item" v-b-modal.modal_due_at>{{ invoice.due_at | date('D. MMM YYYY', 'YYYY-MM-DD') }}</span>
         <BModal id="modal_due_at"
                 centered
@@ -34,6 +35,7 @@
                            :inline="true"
                            field="due_at"/>
         </BModal>
+        
         <br>Late fee:
         <AppEditable :value="invoice.late_fee | currency"
                      :errors="errors"
@@ -41,6 +43,7 @@
                      field="late_fee"
                      placeholder="Add late fee"
                      @change="updateProp({ late_fee: $event })"/>
+        -->
     </div>
 </template>
 <script>
